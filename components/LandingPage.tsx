@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 export default function FullBodyOrgasmCourseLandingPage() {
   const [open, setOpen] = useState(false)
-  const stripeCheckoutUrl = 'https://checkout.stripe.com/c/pay/REPLACE_WITH_YOUR_LINK'
+  const stripeCheckoutUrl = 'PASTE_STRIPE_LINK_HERE'
 
   const sections = [
     {
@@ -79,23 +79,6 @@ export default function FullBodyOrgasmCourseLandingPage() {
       text: 'Finish grounded, open, and connected to a more spacious experience of pleasure and self-trust.',
       unlocked: false,
       lessons: [{ ...moduleLessons[0] }, { ...moduleLessons[1] }],
-    },
-  ]
-
-  const testimonials = [
-    {
-      quote:
-        'This felt elegant, calming, and deeply grounding. I didn’t feel pushed. I felt guided back into my body.',
-      name: 'Private beta student',
-    },
-    {
-      quote: 'The breath and pacing changed everything. It helped me slow down enough to actually feel.',
-      name: 'Course preview viewer',
-    },
-    {
-      quote:
-        'It felt more like nervous system education than performance-based intimacy advice. That made me trust it.',
-      name: 'Somatic wellness client',
     },
   ]
 
@@ -353,24 +336,6 @@ export default function FullBodyOrgasmCourseLandingPage() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-          <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
-            <div>
-              <div className="text-xs uppercase tracking-[0.3em] text-[#D8A06B]">Proof of resonance</div>
-              <h2 className="mt-4 text-3xl font-light text-[#F8F2EA] sm:text-4xl">What early viewers said</h2>
-            </div>
-          </div>
-
-          <div className="mt-10 grid gap-5 lg:grid-cols-3">
-            {testimonials.map((item) => (
-              <div key={item.name} className="rounded-[1.75rem] border border-white/10 bg-white/[0.03] p-6">
-                <p className="text-base leading-8 text-[#F4EDE3]">“{item.quote}”</p>
-                <div className="mt-6 text-sm uppercase tracking-[0.22em] text-[#D8A06B]">{item.name}</div>
-              </div>
-            ))}
-          </div>
-        </section>
-
         <section className="border-y border-white/8 bg-white/[0.03]">
           <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-[0.95fr_1.05fr] lg:px-8">
             <div>
@@ -417,7 +382,11 @@ export default function FullBodyOrgasmCourseLandingPage() {
               <div className="text-xs uppercase tracking-[0.22em] text-white/55">Simple unlock</div>
               <h3 className="mt-4 text-2xl font-medium text-[#F8F2EA]">One-Time Unlock</h3>
               <div className="mt-2 text-3xl font-light text-[#F8F2EA]">$20</div>
-              <p className="mt-4 text-sm leading-7 text-white/75">Get single-purchase access to Modules 2–7 only.</p>
+              <p className="mt-4 text-sm leading-7 text-white/75">
+                Just the modules — no calls, no membership, no other apps. One payment unlocks all six remaining
+                modules — Awareness, Breath, Energy Awareness, Expansion, Circulation, and Integration — twelve
+                guided pieces in total (a video and an audio practice for each), yours to revisit anytime.
+              </p>
               <a
                 href={stripeCheckoutUrl}
                 className="mt-7 inline-flex rounded-full border border-[#BA804A]/55 bg-white/[0.03] px-6 py-3 text-sm font-medium text-[#F4EDE3] transition hover:border-[#BA804A] hover:bg-white/[0.06]"
@@ -429,7 +398,6 @@ export default function FullBodyOrgasmCourseLandingPage() {
               <p className="mt-4 text-xs uppercase tracking-[0.12em] text-white/45">
                 Single purchase for access to Modules 2–7 only
               </p>
-              <p className="mt-2 text-xs text-white/40">Stripe checkout URL can be swapped in later.</p>
             </div>
           </div>
 
