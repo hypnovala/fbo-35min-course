@@ -306,8 +306,8 @@ export default function FullBodyOrgasmCourseLandingPage() {
                     <Image
                       src={`/module${module.num}.png`}
                       alt={`Module ${module.num} placeholder preview`}
-                      width={1}
-                      height={1}
+                      width={1600}
+                      height={900}
                       className="aspect-video w-full object-cover"
                     />
                   </div>
@@ -440,7 +440,7 @@ export default function FullBodyOrgasmCourseLandingPage() {
       <footer className="border-t border-white/8">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-white/45 lg:flex-row lg:items-center lg:justify-between lg:px-8">
           <div>© 2026 Brock Somatic Education</div>
-          <div>Full body Intro Orgasm Course Landing Page</div>
+          <div>Preview to the Full body Intro Orgasm Course</div>
         </div>
       </footer>
     </div>
