@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useState } from 'react'
 
 export default function FullBodyOrgasmCourseLandingPage() {
@@ -301,6 +302,15 @@ export default function FullBodyOrgasmCourseLandingPage() {
                   <h4 className="mt-5 text-lg font-medium text-[#F4EDE3]">
                     Module {module.num}: {module.title}
                   </h4>
+                  <div className="mt-4 overflow-hidden rounded-2xl border border-white/10 bg-black/35">
+                    <Image
+                      src={`/module${module.num}.png`}
+                      alt={`Module ${module.num} placeholder preview`}
+                      width={1}
+                      height={1}
+                      className="aspect-video w-full object-cover"
+                    />
+                  </div>
                   <p className="mt-3 text-sm leading-7 text-white/65">{module.text}</p>
                   <div className="mt-4 space-y-2">
                     {module.lessons.map((lesson, index) => (
