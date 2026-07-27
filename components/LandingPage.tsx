@@ -33,7 +33,7 @@ export default function FullBodyOrgasmCourseLandingPage() {
       title: 'Arrival',
       text: 'Settle your nervous system, release urgency, and create a safe internal starting point.',
       unlocked: true,
-      embedUrl: 'https://hypnoticdreamtv.com/wp-content/uploads/2026/04/FBO_music_2K.mp4',
+      embedUrl: 'https://hypnoticdreamtv.com/wp-content/uploads/2026/07/finalFBO_PT10405_edit0725_part3.mp4',
       lessons: [
         { ...moduleLessons[0] },
         { ...moduleLessons[1] },
