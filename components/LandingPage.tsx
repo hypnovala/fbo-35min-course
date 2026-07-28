@@ -121,7 +121,7 @@ export default function FullBodyOrgasmCourseLandingPage() {
             <div className="mt-1 text-sm text-[rgba(107,76,42,0.7)]">Full Body Intro Orgasm Course</div>
           </div>
           <a
-            href="https://course.brockjohn.com/membership-details"
+            href="https://fbo.brockjohn.com/membership-details"
             className="rounded-full border border-gold px-5 py-2 text-sm font-medium text-brown transition hover:bg-brown hover:text-cream"
           >
             Get Membership Details
@@ -146,7 +146,7 @@ export default function FullBodyOrgasmCourseLandingPage() {
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <a
-                href="https://course.brockjohn.com/membership-details"
+                href="https://fbo.brockjohn.com/membership-details"
                 className="rounded-full bg-brown px-7 py-3 text-center text-sm font-semibold text-cream transition hover:opacity-90"
               >
                 Get Membership Details
@@ -410,7 +410,7 @@ export default function FullBodyOrgasmCourseLandingPage() {
                 </p>
                 <div className="mt-7 flex flex-wrap gap-3">
                   <a
-                    href="https://course.brockjohn.com/membership-details"
+                    href="https://fbo.brockjohn.com/membership-details"
                     className="rounded-full bg-gold px-6 py-3 text-sm font-medium text-brown transition hover:opacity-90"
                   >
                     Get Membership Details
