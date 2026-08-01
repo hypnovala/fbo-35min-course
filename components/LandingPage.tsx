@@ -256,7 +256,7 @@ export default function FullBodyOrgasmCourseLandingPage() {
                 />
               </div>
               <div className="flex flex-col justify-center">
-                <div className="text-xs uppercase tracking-[0.2em] text-gold">Now playing</div>
+                <div className="text-xs uppercase tracking-[0.2em] text-gold">Click to Experience</div>
                 <h3 className="mt-3 text-2xl font-medium text-brown">
                   Module {modules[0].num}: {modules[0].title}
                 </h3>
