@@ -7,6 +7,7 @@ export default function FullBodyOrgasmCourseLandingPage() {
   const [open, setOpen] = useState(false)
   const stripeCheckoutUrl = 'PASTE_STRIPE_LINK_HERE'
   const fboStudentUrl = 'https://fbo-student.brockjohn.com/'
+  const moduleOneUrl = 'https://course.brockjohn.com/module-1'
 
   const sections = [
     {
@@ -258,7 +259,9 @@ export default function FullBodyOrgasmCourseLandingPage() {
               <div className="flex flex-col justify-center">
                 <div className="text-xs uppercase tracking-[0.2em] text-gold">Click to Experience</div>
                 <h3 className="mt-3 text-2xl font-medium text-brown">
-                  Module {modules[0].num}: {modules[0].title}
+                  <a href={moduleOneUrl} target="_blank" rel="noreferrer" className="transition hover:text-amber">
+                    Module {modules[0].num}: {modules[0].title}
+                  </a>
                 </h3>
                 <p className="mt-3 text-sm leading-7 text-[rgba(107,76,42,0.75)]">{modules[0].text}</p>
                 <p className="mt-4 text-xs uppercase tracking-[0.12em] text-[rgba(107,76,42,0.5)]">
@@ -268,7 +271,14 @@ export default function FullBodyOrgasmCourseLandingPage() {
                   <>
                   <div className="flex items-center justify-between rounded-xl border border-gold bg-[rgba(201,169,110,0.12)] px-4 py-2 text-xs text-brown">
                     <span>Video 1: {modules[0].lessons[0].title}</span>
-                    <span className="uppercase tracking-[0.12em] font-semibold">Available</span>
+                    <a
+                      href={moduleOneUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="uppercase tracking-[0.12em] font-semibold transition hover:text-amber"
+                    >
+                      Available
+                    </a>
                   </div>
 
                   <div
