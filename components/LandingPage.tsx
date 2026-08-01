@@ -247,14 +247,12 @@ export default function FullBodyOrgasmCourseLandingPage() {
             </div>
             <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
               <div className="overflow-hidden rounded-2xl border border-[rgba(201,169,110,0.3)] bg-black">
-                <iframe
-                  className="aspect-video w-full bg-black"
-                  src={modules[0].embedUrl}
-                  title="Module 01 - Arrival"
-                  loading="lazy"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
+                <Image
+                  src="/module01.png"
+                  alt="Module 01 placeholder preview"
+                  width={1600}
+                  height={900}
+                  className="aspect-video w-full object-cover"
                 />
               </div>
               <div className="flex flex-col justify-center">
