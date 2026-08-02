@@ -7,7 +7,7 @@ export default function FullBodyOrgasmCourseLandingPage() {
   const [open, setOpen] = useState(false)
   const stripeCheckoutUrl = 'PASTE_STRIPE_LINK_HERE'
   const fboStudentUrl = 'https://fbo-student.brockjohn.com/'
-  const moduleOneUrl = 'https://course.brockjohn.com/module-1'
+  const moduleOneUrl = 'https://public-fbo-access.vercel.app/module-1'
 
   const sections = [
     {
