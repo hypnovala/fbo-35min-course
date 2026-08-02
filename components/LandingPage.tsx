@@ -244,7 +244,7 @@ export default function FullBodyOrgasmCourseLandingPage() {
 
           <div className="mt-10 rounded-[2rem] border border-[rgba(201,169,110,0.3)] bg-white p-6 sm:p-7 shadow-sm">
             <div className="mb-5 inline-flex items-center rounded-full border border-gold bg-[rgba(201,169,110,0.12)] px-4 py-2 text-[11px] uppercase tracking-[0.16em] text-amber">
-              Module 1 · Unlocked · 2 lessons available
+              Module 1 · Unlocked · 3 lessons available
             </div>
             <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
               <div className="overflow-hidden rounded-2xl border border-[rgba(201,169,110,0.3)] bg-black">
@@ -265,7 +265,7 @@ export default function FullBodyOrgasmCourseLandingPage() {
                 </h3>
                 <p className="mt-3 text-sm leading-7 text-[rgba(107,76,42,0.75)]">{modules[0].text}</p>
                 <p className="mt-4 text-xs uppercase tracking-[0.12em] text-[rgba(107,76,42,0.5)]">
-                  This module includes 2 lessons available now
+                  This module includes 3 lessons available now
                 </p>
                 <div className="mt-6 space-y-2">
                   <>
