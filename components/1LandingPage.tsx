@@ -5,6 +5,7 @@ import { useState } from 'react'
 
 export default function FullBodyOrgasmCourseLandingPage() {
   const [open, setOpen] = useState(false)
+  const stripeCheckoutUrl = 'PASTE_STRIPE_LINK_HERE'
   const fboStudentUrl = 'https://fbo-student.brockjohn.com/'
   const moduleOneUrl = 'https://public-fbo-access.vercel.app/module-1'
 
@@ -399,7 +400,7 @@ export default function FullBodyOrgasmCourseLandingPage() {
         </section>
 
         <section id="membership-info" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-          <div className="mx-auto max-w-xl">
+          <div className="grid gap-5 lg:grid-cols-2">
             <div className="rounded-[1.75rem] border-[1.5px] border-gold bg-brown p-7 shadow-sm relative overflow-hidden">
               <div
                 className="absolute inset-0 pointer-events-none"
@@ -428,6 +429,32 @@ export default function FullBodyOrgasmCourseLandingPage() {
                 </p>
               </div>
             </div>
+
+            <div className="rounded-[1.75rem] border border-[rgba(201,169,110,0.3)] bg-white p-7">
+              <div className="text-xs uppercase tracking-[0.22em] text-[rgba(107,76,42,0.6)]">Simple unlock</div>
+              <h3 className="mt-4 text-2xl font-medium text-brown">One-Time Unlock</h3>
+              <div className="mt-2 text-3xl font-light text-brown">$20</div>
+              <p className="mt-4 text-sm leading-7 text-[rgba(107,76,42,0.75)]">
+                Just the modules — no calls, no membership, no other apps. One payment unlocks all six remaining
+                modules — Awareness, Breath, Energy Awareness, Expansion, Circulation, and Integration — twelve
+                guided pieces in total (a video and an audio practice for each), yours to revisit anytime.
+              </p>
+              <a
+                href={stripeCheckoutUrl}
+                className="mt-7 inline-flex rounded-full border border-gold bg-white px-6 py-3 text-sm font-medium text-brown transition hover:bg-[rgba(201,169,110,0.08)]"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Unlock Now
+              </a>
+              <p className="mt-4 text-xs uppercase tracking-[0.12em] text-[rgba(107,76,42,0.5)]">
+                Single purchase for access to Modules 2–7 only
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-8 rounded-3xl border border-[rgba(201,169,110,0.25)] bg-white px-6 py-5 text-sm leading-7 text-[rgba(107,76,42,0.75)] sm:px-7">
+            Choose membership for full access, ongoing benefits, and the limited-time $59 course bonus — or unlock Modules 2–7 once with a simple one-time purchase.
           </div>
         </section>
       
